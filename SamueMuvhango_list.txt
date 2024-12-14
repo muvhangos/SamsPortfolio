@@ -1,0 +1,27 @@
+<html>
+
+<head>
+   <title> My Grocery List Samuel Muvhango </title>
+
+</head>
+
+<body>
+   <h2  style="background-color:beige;"> Sam's first shopping list </H2>
+   
+   <ul style="background-color:powderblue;">
+      <li><i>Carrots   &#129365; </i></li>
+      <li><em>Potatoes &#129364;</em></li>
+      <li>Spinach      &#129388;</li>
+      <li><del>Spinach &#129388;</del></li>
+      <li><strong>Avocado &#129361; </strong></li>
+   </ul>
+ <h2  style="background-color:beige;"> Sam's second shopping list </H2>
+   <ol style="background-color:powderblue;">
+      <li><ins>Carrots  &#129365; </ins></li>
+      <li><b>Potatoes   &#129364;</b></li>
+      <li>Spinach       &#129388;</li>
+      <li>Avocado       &#129361;</li>
+   </ol>
+</body>
+
+</html>
