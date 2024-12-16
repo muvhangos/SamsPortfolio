@@ -11,7 +11,7 @@ function add_selection(x) {
     totals[x] = prices[x] * quantities[x];
     totalOrderAmt += prices[x];
 
-    display_all();
+    --display_all();
 }
 
 function remove_selection(x) {
@@ -23,7 +23,7 @@ if(quantities[x]>=1)
     totalOrderAmt -= prices[x];
    }
 
-    display_all();
+    --display_all();
 }
 
 
@@ -59,15 +59,18 @@ function display_all() {
 
     myTable += "</table>";
 
- myTable += "<br/><button onclick='showtot()'>Checkout</button>";
-myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
+ //myTable += "<br/><button onclick='showtot()'>Checkout</button>";
+//myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
  
 
 
     // document.write(myTable);
     document.getElementById("demo").innerHTML = myTable;
-
-
+	
+	 const MyButton = document.getElementById('MyButton');
+    //Add on click listener for button
+    MyButton.addEventListener('click', function() 
+	{document.getElementById('total').innerHTML =  "Total:" + totalOrderAmt  ;	})
 }
 
 window.onload = function() {
