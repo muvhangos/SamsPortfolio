@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .caption {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="Guessing-Game-Pic-full.webp" alt="Guessing Game" />
+      <div class="caption">Guessing Game</div>
+    </div>
+
+    <div class="card">
+      <img src="JS SuperCalculator.webp" alt="Calculator" />
+      <div class="caption">JS Super Calculator</div>
+    </div>
+	
+	<div class="card">
+      <img src="Dream Car.jpg" alt="Calculator" />
+      <div class="caption">Dream Car</div>
+    </div>
+	
+	<div class="card">
+      <img src="Robot.Jpg" alt="Calculator" />
+      <div class="caption">Robot</div>
+    </div>
+	
+	<div class="card">
+      <img src="ShoppingCart.jpj" alt="Calculator" />
+      <div class="caption">Shopping Cart</div>
+    </div>
+	<div class="card">
+      <img src="Train.Jpg" alt="Calculator" />
+      <div class="caption">Train</div>
+    </div>
+	
+	<div class="card">
+      <img src="Wishlist.Jpg" alt="Calendar" />
+      <div class="caption">Calendar</div>
+    </div>
+	
+	
+	<div class="card">
+      <img src="Weather Forcast.Jpg" alt="Weather Forecast" />
+      <div class="caption">Weather Forecast</div>
+    </div>
+	
+	
+	<div class="card">
+      <img src="Samuel Muvhango.Jpg" alt="Myself" />
+      <div class="caption">Mr Samuel Muvhango</div>
+    </div>
+	
+	
+	
+  </div>
+
+</body>
+</html>
