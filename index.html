@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,30 @@
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
+    }
+
+    .jumbotron .profile-img {
+      max-height: 150px;
+      width: auto;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .jumbotron .col-sm-2,
+      .jumbotron .col-sm-10 {
+        text-align: center;
+      }
+
+      .jumbotron .profile-img {
+        margin: 0 auto 15px;
+        display: block;
+      }
     }
   </style>
 </head>
@@ -48,37 +66,44 @@
   </div>
 </nav>
 
+<!-- Header with image on the left -->
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My projets</h1>      
-    <p>My 2024 web development projects</p>
+    <div class="row">
+      <div class="col-sm-2 text-left">
+        <img src="Samuel Muvhngo.jpg" class="img-responsive profile-img" alt="Samuel Muvhango">
+      </div>
+      <div class="col-sm-10">
+        <h1>My Projects</h1>      
+        <p>My 2024 web development projects</p>
+      </div>
+    </div>
   </div>
 </div>
-  
+
+<!-- Projects Section -->
 <div class="container-fluid bg-3 text-center">    
   <h3>Have Fun exploring the most exciting work</h3><br>
   <div class="row">
     <div class="col-sm-3">
       <p>Js Activities Calendar</p> <a href="switchAndCalendar.html">
       <img src="Callender.webp" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
+      </a>
     </div>
     <div class="col-sm-3"> 
       <p>Robot</p> <a href="robot.html">
-	
       <img src="Robot.jpg" class="img-responsive" style="width:100%" alt="Image">
-	  </a >
+      </a>
     </div>
     <div class="col-sm-3"> 
       <p>Js super Calculator</p> <a href="JS SuperCalculator.html">
       <img src="JS SuperCalculator.webp" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
+      </a>
     </div>
     <div class="col-sm-3">
       <p>Dream Car</p> <a href="dreamCar.html">
       <img src="Dream Car.jpg" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
-   
+      </a>
     </div>
   </div>
 </div><br>
@@ -88,26 +113,27 @@
     <div class="col-sm-3">
       <p>Shopping Cart</p> <a href="shopStart.html">
       <img src="Shopping Cart.jpg" class="img-responsive" style="width:100%" alt="Image">
-   </a>
-   </div>
+      </a>
+    </div>
     <div class="col-sm-3"> 
       <p>function_train</p> <a href="function_train.html">
       <img src="Train.jpg" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
+      </a>
     </div>
     <div class="col-sm-3"> 
       <p>Pizzeria</p> <a href="chap14.html">
       <img src="Pizzeria.webp" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
+      </a>
     </div>
     <div class="col-sm-3">
       <p>Guessing Game</p><a href="Project 2 Random Guess.html">
       <img src="Guessing-Game-Pic-full.webp" class="img-responsive" style="width:100%" alt="Image">
-	  </a>
+      </a>
     </div>
   </div>
 </div><br><br>
 
+<!-- Footer -->
 <footer class="container-fluid text-center">
   <p>Website Designed by Samuel Muvhango</p>
   <p>muvhangos@gmail.com</p>
